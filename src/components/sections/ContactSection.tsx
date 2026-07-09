@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { Container } from "@/components/common/Container";
 import { SectionBadge } from "@/components/common/SectionBadge";
 import { SectionHeading } from "@/components/common/SectionHeading";
@@ -32,7 +33,7 @@ export function ContactSection() {
                 className="flex w-[280px] flex-col items-center gap-3 text-center"
               >
                 <span className="flex size-[60px] items-center justify-center rounded-full bg-[#c5403e]">
-                  <Image src={method.icon} alt={method.alt} width={29} height={29} className="size-[29px]" />
+                  <Image src={asset(method.icon)} alt={method.alt} width={29} height={29} className="size-[29px]" />
                 </span>
                 <span className="text-sm font-semibold text-[#c5403e]">{method.label}</span>
                 <span className="text-sm text-[#605d62]">{method.value}</span>

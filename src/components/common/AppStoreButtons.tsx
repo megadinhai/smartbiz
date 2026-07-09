@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { cn } from "@/lib/utils";
 
 interface StoreButton {
@@ -47,7 +48,7 @@ export function AppStoreButtons({ className }: AppStoreButtonsProps) {
           className="flex h-[55px] items-center gap-[10px] rounded-xl border border-white/60 bg-white px-[19px] py-[11px] transition-colors hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
           <Image
-            src={btn.icon}
+            src={asset(btn.icon)}
             alt={btn.iconAlt}
             width={btn.width}
             height={btn.height}

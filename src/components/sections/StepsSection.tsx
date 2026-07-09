@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Fragment } from "react";
+import { asset } from "@/lib/asset";
 import { SectionBadge } from "@/components/common/SectionBadge";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { STEPS, STEPS_BADGE, STEPS_SUBTITLE } from "@/constants/steps";
@@ -25,7 +26,7 @@ export function StepsSection() {
                   {step.number}
                 </span>
                 <Image
-                  src={step.icon}
+                  src={asset(step.icon)}
                   alt=""
                   aria-hidden
                   width={50}

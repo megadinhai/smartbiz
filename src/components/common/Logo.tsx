@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { cn } from "@/lib/utils";
 
 interface LogoProps {
@@ -24,7 +25,7 @@ export function Logo({
   return (
     <div className={cn("flex items-center gap-3 sm:gap-[19px]", className)}>
       <Image
-        src={mark}
+        src={asset(mark)}
         alt="Biểu tượng SmartBiz"
         width={isFooter ? 61 : 39}
         height={isFooter ? 71 : 45}
@@ -35,7 +36,7 @@ export function Logo({
         priority
       />
       <Image
-        src={wordmark}
+        src={asset(wordmark)}
         alt="SmartBiz"
         width={isFooter ? 270 : 171}
         height={isFooter ? 46 : 29}
