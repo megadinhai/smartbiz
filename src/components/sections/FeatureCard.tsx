@@ -29,8 +29,8 @@ export function FeatureCard({ group }: { group: FeatureGroup }) {
     <article className="flex flex-col rounded-3xl border border-hairline bg-white p-6 shadow-sm">
       {/* Header nhóm */}
       <div className="flex items-start gap-5">
-        <div className="flex size-[60px] shrink-0 items-center justify-center overflow-hidden rounded-full border-4 border-[#ffeaea] bg-brand">
-          <Image src={asset(group.icon)} alt="" aria-hidden width={36} height={36} className="size-9" />
+        <div className="flex size-[60px] shrink-0 items-center justify-center rounded-full border-4 border-[#ffeaea] bg-brand">
+          <Image src={asset(group.icon)} alt="" aria-hidden width={36} height={36} className="size-[30px]" />
         </div>
         <div className="flex flex-col gap-2">
           <span className="inline-flex w-fit items-center rounded-[40px] border border-white/50 bg-gradient-to-r from-[rgba(212,100,100,0.05)] to-[rgba(224,99,99,0.05)] px-3 py-1.5 text-xs font-semibold text-[#c6353c]">
