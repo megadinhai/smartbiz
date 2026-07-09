@@ -29,7 +29,7 @@ export function FeatureCard({ group }: { group: FeatureGroup }) {
     <article className="flex flex-col rounded-3xl border border-hairline bg-white p-6 shadow-sm">
       {/* Header nhóm */}
       <div className="flex items-start gap-5">
-        <div className="flex size-[60px] shrink-0 items-center justify-center rounded-2xl bg-brand/5">
+        <div className="flex size-[60px] shrink-0 items-center justify-center overflow-hidden rounded-full border-4 border-[#ffeaea] bg-brand">
           <Image src={asset(group.icon)} alt="" aria-hidden width={36} height={36} className="size-9" />
         </div>
         <div className="flex flex-col gap-2">
