@@ -8,7 +8,7 @@ export const FEATURES_SUBTITLE =
 export const FEATURE_GROUPS: FeatureGroup[] = [
   {
     badge: "NHÓM 1",
-    icon: "/images/feature-group-1.svg",
+    icon: "/images/feature-icon-public.svg",
     title: "Dịch vụ công",
     description:
       "Kết nối trực tiếp với cơ quan nhà nước thông qua định danh VNeID — không cần đến cơ quan, không nhập lại thông tin.",
@@ -35,7 +35,7 @@ export const FEATURE_GROUPS: FeatureGroup[] = [
   },
   {
     badge: "NHÓM 2",
-    icon: "/images/feature-group-2.svg",
+    icon: "/images/feature-icon-commerce.svg",
     title: "Dịch vụ thương mại",
     description:
       "Bộ công cụ vận hành kinh doanh từ các nhà cung cấp đã được xác minh - tìm kiếm, đăng ký và theo dõi ngay trong app.",
